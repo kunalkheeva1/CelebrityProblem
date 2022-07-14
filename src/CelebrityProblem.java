@@ -11,7 +11,13 @@ public class CelebrityProblem {
             }
         }
         int celeb =i;
-        for(i=0; i<n)
+        for(i=0; i<n; i++){
+            if(i!= celeb){
+                if(arr[i][celeb]==0 || arr[celeb][i] ==1){
+                    return -1;
+                }
+            }
+        }return celeb;
     }
 
 
